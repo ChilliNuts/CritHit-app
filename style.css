@@ -1,0 +1,23 @@
+.weapon {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+#Slashing{
+    background-image: url(https://img.icons8.com/fluent/48/000000/sword.png);
+    background-size: cover;
+}
+#Piercing{
+    background-image: url(https://img.icons8.com/color/48/000000/royal-marines.png);
+    background-size: cover;
+}
+#Bludgeoning{
+    background-image: url(https://img.icons8.com/color/48/000000/thor-hammer.png);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
