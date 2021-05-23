@@ -35,9 +35,9 @@
       <img id="Piercing" class="weapon" src="https://img.icons8.com/color/48/000000/royal-marines.png"/>
       <img id="Bludgeoning" class="weapon" src="https://img.icons8.com/color/48/000000/thor-hammer.png"/> -->
 
-      <button id="Slashing" class="weapon"></button>
-      <button id="Piercing" class="weapon"></button>
-      <button id="Bludgeoning" class="weapon"></button>
+      <button type="button" id="Slashing" class="weapon" data-bs-toggle="modal" data-bs-target="#infoModal"></button>
+      <button type="button" id="Piercing" class="weapon" data-bs-toggle="modal" data-bs-target="#infoModal"></button>
+      <button type="button" id="Bludgeoning" class="weapon" data-bs-toggle="modal" data-bs-target="#infoModal"></button>
     
     </div>
     
@@ -51,11 +51,29 @@
     <!-- <h1>Generate</h1>
     <button id="generate">Generate</button> -->
 
-    <p id="weapon"></p>
-    <p id="severity"></p>
-    <p id="description"></p>
-    <p id="rule"></p>
-    <p id="healing"></p>
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalTitle">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="critInfo"></div>
+        <!-- <p id="weapon"></p>
+        <p id="severity"></p>
+        <p id="description"></p>
+        <p id="rule"></p>
+        <p id="healing"></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
