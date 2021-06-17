@@ -1,3 +1,12 @@
+
+
+.heading {
+    text-align: center;
+}
+
+
+ /* BUTTON STYLES */
+
 .weapon {
     display: block;
     margin: 20px auto;
@@ -9,16 +18,121 @@
     background-image: url(https://img.icons8.com/fluent/48/000000/sword.png);
     background-size: cover;
 }
+#Slashing:hover{
+    box-shadow: 0px 0px 5px #8e9ba4;
+}
+
 #Piercing{
     background-image: url(https://img.icons8.com/color/48/000000/royal-marines.png);
     background-size: cover;
 }
+#Piercing:hover{
+    box-shadow: 0px 0px 5px #8e9ba4;
+}
+
 #Bludgeoning{
     background-image: url(https://img.icons8.com/color/48/000000/thor-hammer.png);
     background-size: cover;
 }
+#Bludgeoning:hover{
+    box-shadow: 0px 0px 5px #8e9ba4;
+}
 
-h1 {
-    text-align: center;
+/* MODAL STYLES */
+
+
+COLOR-PALLETE{
+    color: #32352f;
+    color: #e1dfda;
+    color: #8a7f6f;
+    color: #9fab9e;
+    color: #6c7e72;
+    color: #655447;
+    color: #c48763;
+    color: #b9655b;
+    color: #5e6a6d;
+    color: #8e9ba4;
+}
+.modal hr{
+    margin: 50px 0;
+    box-shadow: 0px 3px 5px;
+}
+
+.btn-close{
+    /* position: absolute;
+    overflow: visible;
+    top: -8px;
+    right: -8px;
+    z-index: 100000; */
+    background-color: #b9655b;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+
+.flavour-text-current{
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 30px 50px;
+    margin: 20px;
+    background-color: #c48763;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px;
+}
+
+.current-header{
+    background-color: #b9655b;
+    color: #32352f; 
+    padding: 15px 30px;
+    margin: -10px -10px 0 -10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* display: inline-block; */
+}
+
+.flavour-text{
+    font-style: italic;
+    padding: 30px 50px;
+    margin: 20px;
+    background-color: #8e9ba4;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px;
+}
+
+.modal-content{
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px;
+    background-color: #9fab9e;
+}
+.modal-header{
+    background-color: #6c7e72;
+    color: #32352f;
+}
+.prev-header{
+    background-color: #5e6a6d;
+    color: #32352f; 
+    padding: 15px 30px;
+    margin: -10px -10px 0 -10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /* display: inline-block; */
+}
+
+.hit-container{
+    box-shadow: 1px 3px 5px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #e1dfda;
+    border-radius: 8px;
+}
+
+.rules-section{
+    padding: 20px;
+}
+
+.rules-section span{
+    display: block;
+    font-weight: bold;
 }
 

@@ -10,6 +10,10 @@ const critInfo = document.querySelector("#critInfo");
 
 const btns = document.querySelectorAll(".weapon");
 
+
+// var sections = document.querySelectorAll('.prev-hit-container');
+var historyTitle;
+
 const outcomes = [];
 
 btns.forEach(btn => {
@@ -32,30 +36,56 @@ btns.forEach(btn => {
 });
 
 function showOutcomes(){
-    let firstHit = true;
     
     critInfo.innerHTML = "";
 
-    outcomes.forEach(info => {
+    outcomes.forEach((info, index) => {
         var div = document.createElement('div');
 
-        if (!firstHit){
-            div.innerHTML = `<hr>
-            <p class="">${info.weap + "  -  SEVERITY: " + info.sev}</p>
-            `;
-        }else {
-            firstHit = false;
-            document.getElementById("infoModalTitle").innerHTML = `<p class="">${info.weap + "  -  SEVERITY: " + info.sev}</p>`
+        if (index === 0){ // generates html and styling for current hit
+            
+            document.getElementById("infoModalTitle").innerHTML = `Current Hit`;
+            
+            div.innerHTML += `
+            <div id="current-hit" class="hit-container">
+            <h3 class="current-header">${info.weap + "  -  SEVERITY: " + info.sev}</h3>
+                <p class="flavour-text-current">" ${info.flavour} "</p>
+                <div class="rules-section">
+                    <p class=""><span>Rules: </span>${info.rule}</p>
+                    <p class=""><span>Healing: </span>${info.healing}</p>
+                </div>
+            </div>
+        `;
+        }else { // generates html and styling for past hits
+            if(index === 1){
+                div.innerHTML += `<hr>
+                <h3 class="history-title">Previous Hits</h3>
+                `;
+            }else div.innerHTML += `<hr>`
+        div.innerHTML += `
+        <div class="hit-container">
+            <h5 class="prev-header">${info.weap + "  -  SEVERITY: " + info.sev}</h5>
+            <p class="flavour-text">" ${info.flavour} "</p>
+            <div class="rules-section">
+                <p class=""><span>Rules: </span>${info.rule}</p>
+                <p class=""><span>Healing: </span>${info.healing}</p>
+            </div>
+        </div>
+        `;
         } 
 
-        div.innerHTML += `
-            
-            <p class="">${info.flavour}</p>
-            <p class="">Rules: ${info.rule}</p>
-            <p class="">Healing: ${info.healing}</p>
-        `;
+       
         critInfo.appendChild(div);
+
+        // sections = document.querySelectorAll('.prev-hit-container');
+        
+        // mainTitle = document.getElementById("infoModalTitle").textContent;
+
+        if(index === 1) historyTitle = document.querySelector('.history-title');
     });
+
+    
+
 }
 
 
