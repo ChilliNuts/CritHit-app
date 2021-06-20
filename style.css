@@ -2,8 +2,14 @@
 
 .heading {
     text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
 
  /* BUTTON STYLES */
 
@@ -72,16 +78,20 @@ COLOR-PALLETE{
 
 
 .flavour-text-current{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
     font-style: italic;
     font-size: 1.1rem;
-    padding: 30px 50px;
-    margin: 20px;
+    padding: 8% 8%;
+    margin: 2%;
     background-color: #c48763;
-    border-radius: 8px;
-    box-shadow: 1px 3px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 4px;
 }
 
 .current-header{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
     background-color: #b9655b;
     color: #32352f; 
     padding: 15px 30px;
@@ -92,24 +102,32 @@ COLOR-PALLETE{
 }
 
 .flavour-text{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
     font-style: italic;
-    padding: 30px 50px;
-    margin: 20px;
+    padding: 8% 8%;
+    margin: 2%;
     background-color: #8e9ba4;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 1px 3px 5px;
 }
 
 .modal-content{
     border-radius: 10px;
-    box-shadow: 2px 5px 10px;
+    box-shadow: 2px 4px 6px;
     background-color: #9fab9e;
 }
 .modal-header{
     background-color: #6c7e72;
     color: #32352f;
 }
+.modal-title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+}
 .prev-header{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
     background-color: #5e6a6d;
     color: #32352f; 
     padding: 15px 30px;
@@ -128,11 +146,19 @@ COLOR-PALLETE{
 }
 
 .rules-section{
-    padding: 20px;
+    font-weight: 300;
+    padding: 5%;
 }
 
 .rules-section span{
+    font-family: 'Cinzel Decorative', cursive;
     display: block;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.history-title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    color: #32352f; 
 }
 
