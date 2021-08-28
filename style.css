@@ -9,6 +9,11 @@
 body{
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
+    background-color: #e1dfda;
+}
+
+.logo-splash{
+    min-width: 1200px;
 }
 
  /* BUTTON STYLES */
@@ -140,7 +145,7 @@ COLOR-PALLETE{
 .hit-container{
     box-shadow: 1px 3px 5px;
     padding: 10px;
-    margin: 20px;
+    margin: 3%;
     background-color: #e1dfda;
     border-radius: 8px;
 }
